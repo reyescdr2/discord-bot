@@ -1,0 +1,36 @@
+# ============================================
+#   CDR BOT - Archivos IGNORADOS por GitHub
+# ============================================
+
+# 🔐 Secretos (NUNCA subir)
+.env
+
+# 📦 Dependencias (se reinstalan con npm install)
+node_modules/
+
+# 🪟 Binario Windows (no sirve en Railway/Linux)
+yt-dlp.exe
+
+# 📋 Logs y errores temporales
+*.log
+debug.log
+error_audio.log
+error_discord.json
+
+# 🧪 Scripts de prueba y utilidades CDR (no necesarios en producción)
+test_api.js
+test_api_v2.js
+test_api_v1.js
+find_duplicates.js
+diagnose_music.js
+test_yt_dlp.js
+clear-commands.js
+test_permisos_ia.txt
+zip.ps1
+.nvmrc
+
+# 🖥️ Scripts de Control Windows (Innecesarios en servidor Linux/GitHub)
+*.bat
+*.ps1
+!deploy-commands.js # Mantener este por si acaso se requiere manual
+!index.js

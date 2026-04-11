@@ -1,0 +1,12 @@
+# 🚀 CDR Bot - Configuración Railway (Nixpacks)
+# Instala yt-dlp y ffmpeg automáticamente en el servidor Linux de Railway
+
+[phases.setup]
+nixPkgs = ["nodejs_22", "ffmpeg", "python3"]
+
+[variables]
+NODE_VERSION = "22"
+NIXPACKS_INSTALL_CMD = "npm install"
+
+[start]
+cmd = "node index.js"
